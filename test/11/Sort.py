@@ -1,11 +1,9 @@
-alist = [54,26,93,17,77,31,44,55,20]
+alist = [54,26,93,17,77,31,44,55,21]
 def bubbleSort(blist):
     for i in range(len(alist)-1, 0, -1):
         for j in range(i):
             if alist[j] > alist[j + 1]:
-                temp = alist[j]
-                alist[j] = alist[j + 1]
-                alist[j + 1] = temp
+              alist[j], alist[j+1] = alist[j+1], alist[j]
 
 bubbleSort(alist)
 print alist
@@ -17,11 +15,9 @@ def selectionSort(alist):
            if alist[j]>alist[positionOfMax]:
                positionOfMax = j
 
-       temp = alist[i]
-       alist[i] = alist[positionOfMax]
-       alist[positionOfMax] = temp
+       alist[i], alist[positionOfMax] = alist[positionOfMax], alist[i]
 
-alist = [59,26,93,17,77,31,44,55,20]
+alist = [59,26,93,17,77,31,44,55,2,99]
 selectionSort(alist)
 print alist
 

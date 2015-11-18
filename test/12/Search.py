@@ -47,7 +47,6 @@ def binarySearchRecursive(alist, item):
                 else:
                     return binarySearchRecursive(alist[midpoint+1:], item)
 
-        return found 
 testlist = [0, 1, 2, 8, 13, 17, 19, 32, 42]
-print binarySearch(testlist, 4) 
+print binarySearch(testlist, 1) 
 print binarySearch(testlist, 33)
